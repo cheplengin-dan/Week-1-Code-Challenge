@@ -1,6 +1,9 @@
+// assigned values for basicSalary & benefits
 const basicSalary = 50000;
 const benefits = 10000;
 
+
+// this function calculates the payee tax
 function calculatePayeeTax(grossSalary) {
   let payeeTax = 0;
 
@@ -15,6 +18,8 @@ function calculatePayeeTax(grossSalary) {
   }
   return payeeTax;
 }
+
+// this function calculates the NHIF and returns the deduction
 
 function calculateNHIF(basicSalary) {
     let nhifDeduction = 0;
@@ -34,6 +39,8 @@ function calculateNHIF(basicSalary) {
 
 }
 
+// this function calculates the NSSF and returns the deduction
+
 function calculateNSSF(basicSalary) {
     let nssfDeduction = 0;
 
@@ -45,6 +52,8 @@ function calculateNSSF(basicSalary) {
     return nssfDeduction;
 
 }
+
+// the function calculateNetSalary callbacks the other functions and returns the net salary
 
 function calculateNetSalary(basicSalary, benefits, calculatePayeeTax, calculateNHIF, calculateNSSF) {
   const grossSalary = basicSalary + benefits;

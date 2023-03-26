@@ -18,11 +18,8 @@ This is a description of how the challenges work:
 ## Challenge setup
 
 On the first challenge i started by creating a random number 
-betweem 0 and 100 then used an if else statement so as to print out the results later containing the values.The second challenge checks a speed then i used an if else statement to check if thats the value i'm looking for then rounded the number,then finaly checked if the points were greater than 12.
+betweem 0 and 100 then used an if else statement so as to print out the results later containing the values.The second challenge checks a speed then i used an if else statement to check if thats the value i'm looking for then rounded the number,then finaly checked if the points were greater than 12.The third challenge writes a program that would calculate the Payee Tax, NHIF, NSSF Deductions and net salary.
 
-## Known issue
-
-wasn't able to complete the net salary calculator challenge.
 
 ## Author & License
 
