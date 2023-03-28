@@ -1,3 +1,4 @@
+
 // We use Math.random() method to generate a random decimal
 // number between 0 and 1. Math.floor() rounds down the number.
 
@@ -8,6 +9,7 @@ let score = Math.floor(Math.random() * 100) + 0;
 function checkScore(score) {
     if ( score >= 79) {
         return 'A';
+        
 
     } else if ( score >= 60) {
         return 'B';
@@ -22,3 +24,16 @@ function checkScore(score) {
         return 'E';
     }
 }
+// checks the scores at random and grades it
+console.log(`The student's score is ${score}.`);
+console.log(`The student's grade is ${checkScore(score)}.`);
+
+
+
+
+
+
+
+
+
+
