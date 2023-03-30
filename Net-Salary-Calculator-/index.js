@@ -1,23 +1,22 @@
 // assigned values for basicSalary & benefits
 const basicSalary = 50000;
 const benefits = 10000;
-
+const taxablePay = basicSalary + benefits;
 
 // this function calculates the payee tax
-function calculatePayeeTax(grossSalary) {
-  let payeeTax = 0;
+function calculatePayeeTax(taxablePay){
+let tax = 0;
 
-  if (grossSalary > 0 && grossSalary <= 12298) {
-    payeeTax = 0;
-  } else if (grossSalary > 12298 && grossSalary <= 23885) {
-    payeeTax = (grossSalary - 12298) * 0.1;
-  } else if (grossSalary > 23885 && grossSalary <= 35472) {
-    payeeTax = 1158.7 + (grossSalary - 23885) * 0.15;
-  } else if (grossSalary > 35472 && grossSalary <= 47059) {
-    payeeTax = 2698.95 + (grossSalary - 35472) * 0.20;
-  }
-  return payeeTax;
+if (taxablePay <= 24000) {
+  tax = taxablePay * 0.1;
+} else if (taxablePay <= 32333) {
+  tax = (24000 * 0.1) + ((taxablePay - 24000) * 0.25);
+} else {
+  tax = (24000 * 0.1) + (8333 * 0.25) + ((taxablePay - 32333) * 0.3);
 }
+}
+
+console.log(`The Payee Tax for a basic salary of ${basicSalary} and benefits of ${benefits} is Ksh ${tax.toFixed(2)}.`);
 
 // this function calculates the NHIF and returns the deduction
 
